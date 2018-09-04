@@ -1,0 +1,487 @@
+@import "./sticky-footer";
+@import "./components/leaflet";
+@import "./fonts/open-sans";
+
+
+// Override Bootstrap styles that you can't modify via variables here.
+body {
+  font-weight: 100;
+  background-color: #f8f8f8;
+}
+
+p, input, textarea, select, button, meter, progress {
+  font-weight: $font-weight-base;
+  padding-top: 30px;
+}
+
+.navbar-inverse .caret {
+  border: 0;
+  background-image: url('../static/svgIcons/caret.svg');
+  height: 9px;
+  width: 16px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .navbar-inverse .caret {
+    display: none;
+  }
+}
+
+.navbar {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .navbar-inverse .navbar-nav > li > a {
+    color: #ababab;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+
+.font-main {
+  font-family: 'Open Sans';
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+mark {
+  background-color: transparent;
+  color: $brand-primary;
+}
+
+.list-links {
+  color: $brand-primary;
+  padding-left: 20px;
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.form-control:focus {
+  background-color: #fbf8df;
+}
+
+.panel {
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.05)
+}
+
+.panel-heading {
+  border-bottom: 0;
+  font-weight: $headings-font-weight;
+}
+
+.panel > .panel-heading {
+  background-color: $panel-bg;
+}
+
+.panel-title {
+  font-size: $font-size-panel-heading;
+}
+
+.panel .list-group-item {
+  background-color: $panel-bg;
+}
+
+.panel-heading + .list-group {
+  .list-group-item:first-child {
+    border-top-width: 1px;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .panel-heading, .panel-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .modal-dialog {
+    margin: 0 auto;
+  }
+}
+
+.modal-header {
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  background-color: #FFFFFF;
+  padding: 20px 40px;
+  @media (max-width: $screen-sm-min) {
+    padding: 15px;
+  }
+
+  .close {
+    color: $brand-primary;
+    opacity: 1;
+  }
+  .close > span {
+    color: $brand-primary;
+    font-size: 40px;
+    font-weight: 500;
+    &:before {
+      content: "Sluiten";
+      font-size: 16px;
+      font-weight: 100;
+      position: relative;
+      right: 4px;
+      top: -9px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.modal-body {
+  padding: 20px 40px 40px 40px;
+  @media (max-width: $screen-sm-min) {
+    padding: 15px;
+  }
+
+}
+
+.modal-content {
+  border: solid 1px #999;
+  box-shadow: none;
+}
+
+.modal-footer {
+  background-color: #F3F3F3;
+  border-radius: 0 0 3px 3px;
+  border-top: none;
+  padding: 40px;
+  @media (max-width: $screen-sm-min) {
+    padding: 15px;
+  }
+  >.btn-default {
+    background-color: transparent;
+  }
+  > .btn {
+    padding: 12px 50px;
+  }
+  .block-on-mobile {
+    @media (max-width: $screen-sm-min) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+.modal-footer .btn + .btn {
+  margin-left: 15px;
+  @media (max-width: $screen-sm-min) {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  padding: 10px 40px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus {
+  background-color: $btn-default-bg;
+  color: darken($btn-default-border, 25%);
+}
+
+.input-group-btn {
+  >button {
+    > i {
+      font-size: 20px;
+      width: 26px;
+    }
+  }
+}
+
+.btn-group {
+  border-radius: 0;
+  margin-bottom: 4px;
+  >button,
+  >button:hover,
+  >button:active {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #DDDDDD;;
+    border-radius: 0;
+    font-weight: 400;
+    background-color: transparent;
+  }
+  >button:first-child {
+    border-left: none;
+  }
+}
+
+
+hr {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  font-family: "FontAwesome";
+  line-height: 1;
+  border-radius: 2px;
+  border: solid 1px $input-border;
+  background-color: #fff;
+  .has-error & {
+    border-color: $state-danger-text;
+  }
+  &:checked {
+    background-color: $brand-primary;
+    border: solid 1px $brand-primary;
+    &:before {
+      color: #fff;
+      content: "\f00c";
+      font-size: 13px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    &:checked {
+      background-color: #fff;
+      border: solid 1px $input-border;
+      &:before {
+        color: $brand-primary;
+        left: 1px;
+        top: 1px;
+      }
+    }
+  }
+}
+.radio input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+  position: relative;
+  margin-left: 6px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+  background-color: $brand-primary;
+  transform: scale(1, 1);
+}
+
+.radio {
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 10px;
+    font-weight: 100;
+    &:before {
+      content: "";
+      background-color: #fff;
+      border: 1px solid #cccccc;
+      border-radius: 50%;
+      display: inline-block;
+      height: 17px;
+      margin-left: -20px;
+      left: 0;
+      position: absolute;
+      transition: border 0.15s ease-in-out;
+      width: 17px;
+    }
+    &:after {
+      content: " ";
+      background-color: #555555;
+      border-radius: 50%;
+      display: inline-block;
+      height: 7px;
+      left: 5px;
+      margin-left: -20px;
+      position: absolute;
+      top: 5px;
+      transform: scale(0, 0);
+      transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      width: 7px;
+    }
+  }
+  .label {
+    padding-left: 5px;
+  }
+}
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-left: -36px;
+}
+
+.footer .navbar {
+  .navbar-nav .dropdown {
+    a {
+      background-color: #dddddd;
+      color: #777777;
+      padding: 20px 0;
+    }
+    .dropdown-menu {
+      background-color: #dddddd;
+      text-align: center;
+    }
+  }
+}
+
+.btn-group {
+  margin-bottom: 4px;
+}
+
+.checkbox label {
+  padding-left: 36px;
+}
+
+.alert {
+  font-size: 14px;
+  padding: 12px;
+}
+
+.form-group {
+  .text-danger {
+    font-size: 14px;
+    padding: 6px 0 0 2px;
+  }
+}
+
+.list-group-item {
+  padding: 20px 15px;
+
+  &.has-error {
+    background-color: #fbe8eb;
+    .text-danger {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .checkbox label {
+      color: $text-color;
+    }
+  }
+
+  &.collapse-header {
+    border-top: 0;
+    color: $brand-primary;
+    cursor: pointer;
+    font-size: 14px;
+    &.in {
+      background-color: darken($brand-primary, 15%);
+      border-color: transparent;
+      color: #fff;
+    }
+    .fa {
+      font-size: 17px;
+    }
+  }
+
+  &.collapse-body {
+    background-color: $brand-primary;
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &.header {
+    color: $brand-primary;
+    font-size: 28px;
+    h2 {
+      margin: 10px 0;
+    }
+  }
+
+  &.checked {
+    font-weight: normal;
+    padding-left: 51px;
+    &:before {
+      color: $brand-primary;
+      content: "\F00C";
+      font-family: "FontAwesome";
+      left: 16px;
+      position: absolute;
+    }
+  }
+}
+
+.serviceLogo {
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  margin-right: 16px;
+  padding: 7px;
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    .active {
+        &::before {
+          border-bottom: 3px solid $brand-primary;
+          bottom: 0;
+          content: '';
+          height: 80px;
+          position: absolute;
+          width: 100%;
+        }
+
+        a, a:hover, a:focus {
+          font-weight: 600;
+          color: $brand-primary;
+          background-color: transparent;
+        }
+      }
+  }
+}
+
+.navbar.navbar-default {
+  >.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.back {
+  border-bottom: 1px solid #ddd;
+  color: $brand-primary;
+  font-size: 14px;
+  line-height: 60px;
+  text-transform: uppercase;
+  .fa {
+    font-size: 27px;
+    margin-right: 6px;
+    position: relative;
+    top: 3px;
+  }
+}

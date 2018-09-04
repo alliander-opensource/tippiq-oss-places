@@ -1,0 +1,14 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.list_item_policy_title {
+  padding-bottom: 0;
+}
+
+.warning {
+  padding: 20px 0;
+}
+@media screen and (min-width: $screen-sm-min) {
+  .list_item_more_info {
+    padding-left: 51px;
+  }
+}

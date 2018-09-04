@@ -1,0 +1,7 @@
+@import "../../theme/variables/screen.css";
+
+.contentWrapper {
+  @media (--screen-sm-maxwidth) {
+    margin-top: 80px;
+  }
+}

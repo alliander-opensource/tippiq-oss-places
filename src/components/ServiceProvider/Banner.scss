@@ -1,0 +1,38 @@
+@import "../../theme/variables/screen.css";
+
+.container {
+  color: #ffffff;
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @media (--screen-sm-minwidth) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.text {
+  color: #333333;
+  height: 100%;
+  display: inline-block;
+  max-width: calc(100% - 176px);
+  font-size: 0.7em;
+
+  @media (--screen-sm-minwidth) {
+    font-size: 1em;
+  }
+}
+
+.logo {
+  display: inline;
+  max-width: 158px;
+  vertical-align: top;
+  margin-left: 18px;
+  max-height: 52px;
+
+  @media (--screen-sm-minwidth) {
+    vertical-align: middle;
+    max-height: none;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../theme/variables/screen.css";
+
+.buttonBar {
+  margin-bottom: 100px;
+}
+
+.buttonBarButton {
+  margin-left: 16px;
+  @media (--screen-sm-maxwidth) {
+    margin: 10px 0;
+    width: 100%;
+  }
+}

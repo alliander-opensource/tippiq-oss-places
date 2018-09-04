@@ -1,0 +1,36 @@
+@import "../../theme/variables/screen.css";
+@import "../../theme/variables/colors.css";
+@import "../../theme/variables/fonts.css";
+@import "../../theme/variables/headings.css";
+
+.pageHeader {
+  margin-bottom: 20px;
+  font-family: var(--family);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: var(--headingsLineHeight);
+  color: var(--primaryHeader);
+  @media (--screen-sm-maxwidth) {
+    font-size: 28px;
+  }
+}
+
+.ruler {
+  margin: 30px 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #dedede;
+}
+
+.lastSection {
+  margin-bottom: 30px;
+}
+
+.sectionHeader {
+  margin-bottom: 30px;
+  font-family: var(--family);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: var(--headingsLineHeight);
+  color: var(--inactiveText);
+}

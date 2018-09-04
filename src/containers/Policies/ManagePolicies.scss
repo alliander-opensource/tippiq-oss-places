@@ -1,0 +1,13 @@
+@import "../../theme/variables/screen.css";
+
+.content {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.badge {
+  @media (--screen-sm-minwidth) {
+    padding-right: 15px;
+    width: calc(100% - 170px);
+  }
+}

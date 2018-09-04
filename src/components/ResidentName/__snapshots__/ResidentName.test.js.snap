@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResidentName with children 1`] = `
+<span
+  className=""
+>
+  Chuck Norris
+  <a
+    href="/pas-aan"
+  >
+    Pas aan
+  </a>
+</span>
+`;
+
+exports[`ResidentName with displayName 1`] = `
+<span
+  className=""
+>
+  Chuck Norris
+</span>
+`;
+
+exports[`ResidentName with displayName 2`] = `
+<span
+  className=""
+>
+  test@example.com
+</span>
+`;
+
+exports[`ResidentName with long length limit 1`] = `
+<span
+  className=""
+>
+  Edward van Llanfair­pwllgwyngyll­goge...
+</span>
+`;
+
+exports[`ResidentName with ludicrous length limit 1`] = `
+<span
+  className=""
+>
+  Edward van Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch
+</span>
+`;
+
+exports[`ResidentName with short length limit 1`] = `
+<span
+  className=""
+>
+  Ed...
+</span>
+`;
+
+exports[`ResidentName with very long name 1`] = `
+<span
+  className=""
+>
+  Edward van Llanfa...
+</span>
+`;
+
+exports[`ResidentName without displayName 1`] = `
+<span
+  className=""
+>
+  Bewoner
+</span>
+`;

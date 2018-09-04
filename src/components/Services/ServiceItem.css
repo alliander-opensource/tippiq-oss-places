@@ -1,0 +1,101 @@
+@import "../../theme/variables/screen.css";
+@import "../../theme/variables/colors.css";
+
+.serviceItem {
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  min-height: 220px;
+  width: 226px;
+  @media (--screen-sm-maxwidth) {
+    display: inherit;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.inDevelopment {
+  background: url('./components/Services/ontwikkeling.svg') no-repeat;
+  height: 110px;
+  position: absolute;
+  width: 146px;
+  top: -1px;
+  right: -16px;
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 204px;
+}
+
+.logoContainer {
+  align-items: center;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  display: flex;
+  justify-content: center;
+  max-height: 110px;
+  min-height: 110px;
+}
+
+.clickableContainer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  width: 100%;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.serviceTitle {
+  color: #333333;
+  font-weight: 700;
+  margin: 20px 0 20px 15px;
+  padding-top: 0;
+}
+
+.ruler {
+  margin: 0 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  margin: 0 -1px;
+}
+
+.serviceButton {
+  background: #f3f3f3;
+  cursor: pointer;
+  color: var(--primary);
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid transparent;
+  border-radius: 0;
+  line-height: 1.42857;
+  margin: 0 1px;
+  padding: 10px 7px;
+  text-transform: uppercase;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.serviceImage {
+  max-height: 500px;
+  @media (--screen-sm-maxwidth) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

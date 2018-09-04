@@ -1,0 +1,35 @@
+@import "../../theme/variables/screen.css";
+
+.addressContainer {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 40px;
+  @media (--screen-sm-maxwidth) {
+    flex-direction: column;
+  }
+}
+
+.address {
+  flex: 1 auto;
+  padding: 30px;
+  @media (--screen-sm-maxwidth) {
+    padding: 15px;
+  }
+}
+
+.map {
+  flex: 8 auto;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container {
+  border-radius: 5px;
+  @media (--screen-sm-maxwidth) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

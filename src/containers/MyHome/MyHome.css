@@ -1,0 +1,13 @@
+@import "../../theme/variables/screen.css";
+
+.page-location {
+  margin-top: 30px;
+}
+
+.topMargin {
+  margin-top: 20px;
+}
+
+.bottomMargin {
+  margin-bottom: 20px;
+}

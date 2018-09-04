@@ -1,0 +1,20 @@
+@import "../../theme/variables/screen.css";
+
+.header {
+  margin: 50px 0 40px 0;
+}
+
+.headerButton {
+  margin-top: 12px;
+  @media (--screen-sm-maxwidth) {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+.editButton {
+  @media (--screen-sm-maxwidth) {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+}

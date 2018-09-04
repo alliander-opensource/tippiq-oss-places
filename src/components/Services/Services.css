@@ -1,0 +1,28 @@
+@import "../../theme/variables/screen.css";
+
+.serviceContainer {
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  margin: -10px;
+  @media (--screen-md-maxwidth) {
+    flex-wrap: wrap;
+  }
+}
+
+.bottomMargin {
+  margin-bottom: 20px;
+}
+
+.serviceItemPlaceholder {
+  flex: 1;
+  min-height: 220px;
+  background-color: #f3f3f3;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  @media (--screen-sm-maxwidth) {
+    display: none;
+  }
+}
