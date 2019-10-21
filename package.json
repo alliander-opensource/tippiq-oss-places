@@ -139,7 +139,7 @@
     "ismobilejs": "0.4.0",
     "jsonwebtoken": "7.1.9",
     "jwt-decode": "2.1.0",
-    "knex": "0.12.6",
+    "knex": "0.19.5",
     "knex-postgis": "0.2.0",
     "leaflet": "1.0.2",
     "less": "2.7.1",
