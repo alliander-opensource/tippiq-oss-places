@@ -202,7 +202,7 @@
     "store2": "2.3.2",
     "strip-loader": "0.1.2",
     "style-loader": "0.13.1",
-    "superagent": "3.3.2",
+    "superagent": "5.1.0",
     "supertest-as-promised": "4.0.2",
     "supertest-session": "2.0.1",
     "traverse": "0.6.6",
