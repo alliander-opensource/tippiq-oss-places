@@ -160,7 +160,7 @@
     "passport-http-bearer": "1.0.1",
     "passport-jwt": "2.1.0",
     "path": "0.12.7",
-    "pg": "6.1.0",
+    "pg": "7.12.1",
     "pinkie-promise": "2.0.1",
     "piping": "0.3.0",
     "postcss-loader": "0.13.0",
