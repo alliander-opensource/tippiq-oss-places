@@ -144,7 +144,7 @@
     "leaflet": "1.0.2",
     "less": "2.7.1",
     "less-loader": "2.2.2",
-    "lodash": "4.17.4",
+    "lodash": "4.17.19",
     "lru-memoize": "1.0.1",
     "map-props": "1.0.0",
     "moment": "2.12.0",
