@@ -134,7 +134,7 @@
     "geojsonhint": "1.2.1",
     "healthcheck-middleware": "1.0.1",
     "hoist-non-react-statics": "1.0.5",
-    "http-proxy": "1.15.1",
+    "http-proxy": "1.18.1",
     "invariant": "2.2.1",
     "ismobilejs": "0.4.0",
     "jsonwebtoken": "7.1.9",
